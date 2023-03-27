@@ -46,3 +46,9 @@ q.get_quotes()
 ```
 
 Quotes are paginated by default, you can iterate through them by next(), previous(), or setting the limit or offset manually on the quote object
+```
+q.next()
+q.previous()
+
+q.limit = 100
+q.next()
