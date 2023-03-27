@@ -21,7 +21,7 @@ l = Lotr(access_token='your_token_here')
 ```
 If there is any issue authenticating, this will raise an unauthorized error, and you'll need to check your token to confirm it is correct.
 
-From here, you now have access to the two main functions: movies and quotes. Both are able to apply filters and sorts, in the format:
+From here, you now have access to the two main functions: movies and quotes. When you call a get, the return for all will be in JSON.  Both are able to apply filters and sorts, in the format:
 Sort:
 ```
 sort=<field_name>
@@ -37,6 +37,12 @@ To fetch all movies:
 ```
 m = l.movie()
 m.get_movies()
+```
+
+To fetch movies with an academy award:
+```
+fancy_m = l.movie(movie_filter='academyAwardWins>0')
+fancy_m.get_movies()
 ```
 
 To fetch all quotes:
