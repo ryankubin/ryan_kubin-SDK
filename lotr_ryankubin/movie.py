@@ -6,6 +6,7 @@ class Movie:
     """
     Movie allows access to a filtered and sorted set of movies
     """
+
     def __init__(
         self, http_instance, movie_id="", sort="", direction="dsc", movie_filter=""
     ):

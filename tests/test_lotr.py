@@ -6,12 +6,12 @@ import pytest
 
 
 def test_connection_successful(blank_lotr):
-    assert blank_lotr.http_instance.endpoint == 'https://the-one-api.dev/v2/movie'
+    assert blank_lotr.http_instance.endpoint == "https://the-one-api.dev/v2/movie"
 
 
 def test_bad_creds():
     with pytest.raises(Exception):
-        l = Lotr(access_token='fubar')
+        l = Lotr(access_token="fubar")
 
 
 def test_no_creds():
@@ -25,4 +25,3 @@ def test_get_movie(blank_lotr):
 
 def test_get_quote(blank_lotr):
     assert isinstance(blank_lotr.quote(movie_id=movie_id), Quote)
-
