@@ -1,5 +1,5 @@
-from query import *
-from schemas import QUOTE_SCHEMA
+from lotr_ryankubin.query import *
+from lotr_ryankubin.schemas import QUOTE_SCHEMA
 
 
 class Quote:

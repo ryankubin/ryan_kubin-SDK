@@ -1,7 +1,7 @@
-from connection import HTTPSConnection
-from quote import Quote
-from movie import Movie
-from config import *
+from lotr_ryankubin.connection import HTTPSConnection
+from lotr_ryankubin.quote import Quote
+from lotr_ryankubin.movie import Movie
+from lotr_ryankubin.config import *
 
 
 class Lotr:

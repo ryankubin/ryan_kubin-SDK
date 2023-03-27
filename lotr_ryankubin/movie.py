@@ -1,5 +1,5 @@
-from query import *
-from schemas import MOVIE_SCHEMA
+from lotr_ryankubin.query import *
+from lotr_ryankubin.schemas import MOVIE_SCHEMA
 
 
 class Movie:
